@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-300 h-[380px] 
+		min-w-[315px] max-w-[440px]
+		shadow-xl;
+  }
+}
+
+.text-medium {
+  font-weight: 500;
+  color: black;
+}
+.text-regular {
+  font-weight: 400;
+  color: #6b7280;
+}
+.text-semibold {
+  font-weight: 600;
+  color: white;
+}

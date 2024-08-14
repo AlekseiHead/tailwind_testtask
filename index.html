@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Card</title>
+  </head>
+  <body>
+    <!--Card-->
+    <div class="flex h-screen justify-center items-center">
+      <div
+        class="card bg-gray-300 w-full justify-between lg:w-[440px] overflow-hidden"
+      >
+        <div class="w-full h-full relative">
+          <div class="flex justify-end">
+            <button
+              class="bg-white rounded-md border border-gray-200 w-fit h-fit mt-3 mr-3 px-2.5 py-1.5 text-medium text-xs"
+            >
+              button
+            </button>
+          </div>
+
+          <!--Card Text-->
+          <div class="group">
+            <div
+              class="flex flex-col gap-3 absolute h-[158px] bg-white py-4 px-3 z-30 bottom-0 right-0 left-0 transition-all duration-300 ease-in-out group-hover:h-[286px]"
+            >
+              <div class="flex justify-between items-center gap-1">
+                <div>
+                  <span class="text-regular text-sm">Subheader</span>
+                  <h1 class="text-medium text-xl">Header</h1>
+                </div>
+                <h2 class="text-medium text-lg">Text</h2>
+              </div>
+
+              <!--Card Button-->
+              <div
+                class="flex flex-col items-center gap-1 opacity-100 transition-opacity ease-in-out duration-300 group-hover:opacity-0 group-hover:h-0"
+              >
+                <button
+                  class="flex items-center justify-center gap-2.5 bg-gray-500 rounded-lg w-full py-3.5 text-semibold"
+                >
+                  Button
+                </button>
+                <div class="text-regular text-xs">
+                  <span>Sub text</span>
+                </div>
+              </div>
+
+              <!--Hidden list-->
+              <div
+                class="gap-2 border-t-2 border-gray-200 border-b-0 border-l-0 border-r-0 pt-3 group-hover:flex flex-col"
+              >
+                <div class="flex justify-between text-regular text-sm">
+                  <p>Text</p>
+                  <a href="#" class="text-gray-800">Link</a>
+                </div>
+                <div class="flex justify-between text-regular text-sm">
+                  <p>Text</p>
+                  <a href="#" class="text-gray-800">Link</a>
+                </div>
+                <div class="flex justify-between text-regular text-sm">
+                  <p>Text</p>
+                  <a href="#" class="text-gray-800">Link</a>
+                </div>
+                <div class="flex justify-between text-regular text-sm">
+                  <p>Text</p>
+                  <a href="#" class="text-gray-800">Link</a>
+                </div>
+
+                <!--Hidden Card Button-->
+                <div class="flex flex-col items-center gap-1">
+                  <button
+                    class="flex items-center justify-center gap-2.5 bg-gray-500 rounded-lg w-full py-3.5 text-semibold"
+                  >
+                    Button
+                  </button>
+                  <div class="text-regular text-xs">
+                    <span>Sub text</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
